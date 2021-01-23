@@ -6,3 +6,7 @@
 # Setting up configuration
 
 [Refer](config/kakfa.yaml)
+
+
+# How to Run
+  ``go run main.go``
