@@ -8,8 +8,9 @@ import (
 
 //TopicDesc holds topic Related Information
 type TopicDesc struct {
-	Name   string             `yaml:"name"`
-	Config map[string]*string `yaml:"configs"`
+	Name        string `yaml:"name"`
+	RetentionMs string `yaml:"retentionMs"`
+	Compression string `yaml:"compression"`
 }
 
 //KafkaBroker holds broker Info and topic details of kafka

@@ -4,12 +4,12 @@ replication: 1
 partitions: 2
 topics:
   - name: Topic4
-  # below config is Topic specific which will overrided if topic already exist
-    configs:
-      retention.ms: 12000   
-      compression.type: gzip  
+    retentionMs: 1203
+    compression: zstd 
   - name: Topic2
-    configs:
-      retention.ms: 48000
-      compression.type: gzip  
+    retentionMs: 1201
+    compression: zstd
+  - name: Topic234
+    retentionMs: 1202
+    compression: zstd
       
